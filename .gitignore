@@ -1,0 +1,24 @@
+# Local environments and caches
+.venv/
+.cache/
+__pycache__/
+*.pyc
+*.log
+
+# PyTorch weights: download from https://huggingface.co/stabilityai/sd-vae-ft-mse (see README)
+models/*.safetensors
+models/*.bin
+
+# onnx2tf by-products
+artifacts/tflite/**/schema.fbs
+artifacts/tflite/**/schema_generated.py
+artifacts/tflite/**/*_tensor_correspondence_report.json
+
+# Unverified / known-broken models
+artifacts/tflite/**/*_float16_full.tflite
+calibrated_models/
+
+# Unfinished packaging work
+release/
+release_files/
+make_release.py

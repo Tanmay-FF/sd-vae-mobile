@@ -1,0 +1,25 @@
+# Only for engineers who want to rebuild every model from the PyTorch weights.
+# Tested with Python 3.12.9 on Windows 11. For a GPU, install the CUDA build of torch
+# from https://pytorch.org first. The scripts fall back to CPU without one.
+torch==2.6.0
+diffusers==0.35.2
+huggingface_hub==0.36.2
+safetensors==0.8.0
+numpy==2.4.4
+pillow
+scikit-image==0.26.0
+onnx==1.20.1
+onnxsim==0.6.5
+onnxscript==0.6.2
+onnxoptimizer==0.4.2
+onnxruntime==1.24.1        # or onnxruntime-gpu==1.24.1
+# onnx2tf is installed separately, without its strict pins:
+#   pip install --no-deps onnx2tf==2.6.9
+onnx_graphsurgeon==0.6.1
+sng4onnx==2.0.1
+sne4onnx==2.0.1
+psutil
+tensorflow==2.21.0
+tf_keras==2.21.0
+ai-edge-litert==2.2.0
+ai-edge-quantizer==0.9.0

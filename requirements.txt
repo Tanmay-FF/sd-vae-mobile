@@ -1,0 +1,6 @@
+# Needed to run calibrate.py and to load the .tflite models from Python.
+numpy>=2.0
+pillow>=10.0
+scikit-image==0.26.0
+ai-edge-litert==2.2.0
+ai-edge-quantizer==0.9.0
