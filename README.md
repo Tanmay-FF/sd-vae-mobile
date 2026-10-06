@@ -27,7 +27,7 @@ The `.onnx` and `.tflite` files are stored with **Git LFS** (about 960 MB). Inst
 
 ```
 git lfs install
-git clone https://github.com/TanmayThaker/sd-vae-mobile.git
+git clone https://github.com/Tanmay-FF/sd-vae-mobile.git
 ```
 
 If you cloned before installing LFS, the model files will be tiny text "pointer" files. Fix that with `git lfs pull` inside the repo.
